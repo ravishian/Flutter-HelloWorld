@@ -1,3 +1,4 @@
+import 'package:c1/Utils/routes.dart';
 import 'package:c1/pages/Loginpage.dart';
 import 'package:c1/pages/image.dart';
 import 'package:flutter/material.dart';
@@ -17,9 +18,11 @@ void main() {
 
       initialRoute: "/image",
       routes: {
-        "/" :(context) => loginpage(),
+        MyRoutes.homeRoute:(context) => loginpage(),
         "/home" :(context) => HomePage(),
         "/image" :(context) => ImagePage(),
+        MyRoutes.homeRoute :(context) => HomePage(),
+
       },
     );
   }
